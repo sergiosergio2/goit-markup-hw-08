@@ -1,0 +1,42 @@
+.work-section {
+
+  margin: 0 auto;
+}
+
+.work-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.work-menu-btn {
+  display: block;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+}
+
+
+
+.work-menu-btn-text {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.63;
+ 
+  color: #212121;
+  transition-property: color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+         &:hover,
+         &:focus {
+            color: #ffffff;
+            background: var(--accent-color);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+         }
+}

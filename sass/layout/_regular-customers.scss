@@ -1,0 +1,47 @@
+.regular-customers {
+
+  margin: 0 auto;
+}
+.regular-customers-title {
+  margin-bottom: 50px;
+  
+}
+.regular-customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+.regular-customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+         border-color: var(--accent-color);
+      }
+}
+
+
+
+.regular-customers-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      .regular-customers-link:hover &,
+      .regular-customers-link:focus & {
+         fill: var(--accent-color);
+      }
+}

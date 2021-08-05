@@ -1,0 +1,44 @@
+.skills {
+  
+  margin: 0 auto;
+  padding-bottom: 94px;
+}
+
+.skills__title {
+  margin-bottom: 50px;
+ 
+}
+.skills__list {
+  display: flex;
+  justify-items: baseline;
+  justify-content: space-between;
+  position: relative;
+
+     &:not(:last-child) {
+       margin-right: 30px;
+     }
+}
+
+
+.skills__overlay {
+
+
+  width: 370px;
+  height: 70px;
+  padding: 27px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+.skills__overlay_position {
+   position: absolute;
+   bottom: 0;
+}

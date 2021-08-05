@@ -1,0 +1,45 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.link {
+  list-style: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

@@ -1,0 +1,31 @@
+.container {
+   
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+// 480+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  } 
+}
+@media screen and (min-width: 780px) {
+    .container {
+        width: 780px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+  width: 1200px;
+  
+}
+
+}
+    
+
+    
+
+
+
