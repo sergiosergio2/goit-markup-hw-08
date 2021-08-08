@@ -389,7 +389,7 @@ img {
   width: 100vw;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/mob/bg-main.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../images/fon-images/mob/bg-main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #c4c4c4;
@@ -398,7 +398,7 @@ img {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/mob/bg-main@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../images/fon-images/");
   }
 }
 
@@ -418,13 +418,13 @@ img {
 @media screen and (min-width: 780px) {
   .hero {
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/tabl/bg-main.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../images/fon-images/tabl/bg-main.jpg");
   }
 }
 
 @media screen and (min-width: 780px) and (min-device-pixel-ratio: 2), screen and (min-width: 780px) and (min-resolution: 192dpi), screen and (min-width: 780px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/tabl/bg-main@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../images/fon-images/tabl/bg-main@2x.jpg");
   }
 }
 
@@ -433,13 +433,13 @@ img {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/desktop/bg-main.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../images/fon-images/desktop/bg-main.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../.././images/fon-images/desktop/bg-main@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../images/fon-images/desktop/bg-main@2x.jpg");
   }
 }
 

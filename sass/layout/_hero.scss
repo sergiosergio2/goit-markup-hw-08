@@ -6,7 +6,7 @@
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(49, 58, 160, 0.4)),
-      url("../../images/fon-images/mob/bg-main.jpg");
+      url("../images/fon-images/mob/bg-main.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
             background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(49, 58, 160, 0.4)),
-      url("../../images/fon-images/mob/bg-main@2x.jpg");
+      url("../images/fon-images/");
           }
         }
 .hero-title {
@@ -45,7 +45,7 @@
      background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(49, 58, 160, 0.4)),
-      url("../../images/fon-images/tabl/bg-main.jpg");
+      url("../images/fon-images/tabl/bg-main.jpg");
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -55,7 +55,7 @@
             background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(49, 58, 160, 0.4)),
-      url("../../images/fon-images/tabl/bg-main@2x.jpg");
+      url("../images/fon-images/tabl/bg-main@2x.jpg");
           }
         }
 }
@@ -68,7 +68,7 @@
      background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(49, 58, 160, 0.4)),
-      url("../../images/fon-images/desktop/bg-main.jpg");
+      url("../images/fon-images/desktop/bg-main.jpg");
   }
   @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -77,7 +77,7 @@
             background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(49, 58, 160, 0.4)),
-      url("../.././images/fon-images/desktop/bg-main@2x.jpg");
+      url("../images/fon-images/desktop/bg-main@2x.jpg");
           }
         }
 
