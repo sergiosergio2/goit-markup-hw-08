@@ -47,19 +47,26 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 
@@ -379,15 +386,20 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
-  margin: 0px auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../images/fon-images/foto-fon1.jpg");
+  width: 100vw;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/mob/bg-main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #c4c4c4;
   background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/mob/bg-main@2x.jpg");
+  }
 }
 
 .hero-title {
@@ -395,12 +407,40 @@ img {
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 780px) {
+  .hero {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/tabl/bg-main.jpg");
+  }
+}
+
+@media screen and (min-width: 780px) and (min-device-pixel-ratio: 2), screen and (min-width: 780px) and (min-resolution: 192dpi), screen and (min-width: 780px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/tabl/bg-main@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/desktop/bg-main.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(49, 58, 160, 0.4)), url("../../images/fon-images/desktop/bg-main@2x.jpg");
+  }
 }
 
 .modal-btn {
@@ -427,27 +467,13 @@ img {
   background-color: #188ce8;
 }
 
-.advantages {
-  margin: 0 auto;
-}
-
-.advantages-icon {
-  display: flex;
-  justify-content: space-between;
-}
-
 .advantages-icon-field {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 270px;
-  height: 120px;
+  max-width: 450px;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
-}
-
-.advantages-icon-field:not(:last-child) {
-  margin-right: 30px;
 }
 
 .advantages-icon-pic {
@@ -455,17 +481,16 @@ img {
   height: 70px;
 }
 
-.advantages-list {
+.advantages-icon-item {
   display: flex;
-  justify-content: space-between;
-}
-
-.advantages-block {
-  width: 270px;
-}
-
-.advantages-block:not(:last-child) {
-  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  height: 120px;
+  width: 100vw;
+  max-width: 450px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
 }
 
 .advantages-list-title {
@@ -484,6 +509,50 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 780px) {
+  .advantages-icon {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    max-width: 780px;
+  }
+  .advantages-icon-field {
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 354px;
+    align-items: flex-start;
+    margin-bottom: 0px;
+  }
+  .advantages-icon-item {
+    max-width: 354px;
+  }
+  .advantages-text-1 {
+    height: 75px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .advantages-icon-field {
+    max-width: 270px;
+    margin: 0px;
+  }
+  .advantages-icon-item {
+    max-width: 270px;
+  }
+  .advantages-text-1 {
+    height: inherit;
+  }
 }
 
 .section-title {

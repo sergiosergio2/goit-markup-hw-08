@@ -1,31 +1,122 @@
 .hero {
-  max-width: 1600px;
+  width: 100vw;
 
-  margin: 0px auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(49, 58, 160, 0.4)),
-      url("../images/fon-images/foto-fon1.jpg");
+      url("../../images/fon-images/mob/bg-main.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #c4c4c4;
   background-position: center;
-}
 
+}
+@media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero {
+            background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(49, 58, 160, 0.4)),
+      url("../../images/fon-images/mob/bg-main@2x.jpg");
+          }
+        }
 .hero-title {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
  
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
+
+
+@media screen and (min-width:780px) {
+  .hero {
+    margin: 0 auto;
+     background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(49, 58, 160, 0.4)),
+      url("../../images/fon-images/tabl/bg-main.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero {
+            background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(49, 58, 160, 0.4)),
+      url("../../images/fon-images/tabl/bg-main@2x.jpg");
+          }
+        }
+}
+@media screen and (min-width:1200px) {
+   .hero {
+     max-width: 1600px;
+      
+  padding-top: 200px;
+  padding-bottom: 200px;
+     background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(49, 58, 160, 0.4)),
+      url("../../images/fon-images/desktop/bg-main.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero {
+            background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(49, 58, 160, 0.4)),
+      url("../../images/fon-images/desktop/bg-main@2x.jpg");
+          }
+        }
+
+}
+
+
+
+
+
+
+
+// .hero {
+//   max-width: 1600px;
+
+  // margin: 0px auto;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(49, 58, 160, 0.4)),
+//       url("../images/fon-images/foto-fon1.jpg");
+
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-color: #c4c4c4;
+//   background-position: center;
+// }
+
+// .hero-title {
+//   display: block;
+//   margin: 0 auto;
+//   margin-bottom: 30px;
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+ 
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: #ffffff;
+// }

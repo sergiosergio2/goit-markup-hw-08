@@ -1,44 +1,44 @@
+
+
 .advantages {
+
  
-  margin: 0 auto;
 }
-.advantages-icon {
-  display: flex;
-  justify-content: space-between;
-}
+
 .advantages-icon-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+ 
+  margin-bottom: 30px;
+  
+
+  
+}
+ .advantages-icon-pic {
+   
+  width: 70px;
+  height: 70px;
+  
+  
+}
+.advantages-icon-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  line-height: 0;
+ 
   height: 120px;
+  width: 100vw;
+  max-width: 450px;
+ 
   margin-bottom: 30px;
   background-color: #f5f4fa;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
 }
-.advantages-icon-pic {
-  width: 70px;
-  height: 70px;
-}
-
-.advantages-list {
-  display: flex;
-
-  justify-content: space-between;
-}
-
-.advantages-block {
-  width: 270px;
-
-    &:not(:last-child) {
-     margin-right: 30px;
-    }
-}
-
 .advantages-list-title {
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -47,8 +47,7 @@
   color: var(--primary-color);
   margin-bottom: 10px;
 }
-
-.advantages-text {
+ .advantages-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -56,4 +55,68 @@
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
+
+@media screen and (min-width:780px) {
+
+ 
+  .advantages-icon {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    margin-left: -30px;
+    margin-top: -30px;
+    max-width: 780px;
+
+
+  }
+  .advantages-icon-field {
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 354px;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    
+  }
+  .advantages-icon-item {
+ 
+    max-width: 354px;
+  }
+  .advantages-text-1 {
+   height: 75px;
+  }
+
+}
+ @media screen and(min-width:1200px) {
+   .advantages-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-top: 0;
+    margin-left: 0;
+    
+  
+   
+  }
+  
+  .advantages-icon-field {
+  
+    max-width: 270px;
+    
+   margin: 0px;
+    
+  }
+  .advantages-icon-item {
+    
+    max-width: 270px;
+  }
+  .advantages-text-1 {
+   height: inherit;
+  }
+   
+ }
+
+
 
