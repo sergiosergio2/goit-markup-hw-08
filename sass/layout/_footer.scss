@@ -1,26 +1,37 @@
 footer {
-
-  margin: 0 auto;
-  padding: 60px 0px;
-
+  
+  width: 100vw;
+ 
+  padding: 60px 0;
   background-color: #2f303a;
 }
 .footer-block {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
 }
-
+.footer-logo-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
 .footer-text-link-block {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  
  
 }
 .logo-footer {
+ 
   margin-bottom: 20px;
 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -28,9 +39,15 @@ footer {
 .logo-studio-footer {
   color: #ffffff;
 }
-
+.address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .address-post {
-  margin-bottom: 9px;
+  
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -53,7 +70,13 @@ footer {
 }
 
 .address-mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+.footer-text-link-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-text {
@@ -98,4 +121,61 @@ footer {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-block {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-block {
+    width: 768px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  }
+
+   
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    width: 1200px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+.footer-text-link-block {
+  display: block;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  margin-left: 70px;
+}
+ 
+
+.footer-logo-address {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0px;
+}
+.logo-footer {
+  
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-studio-footer {
+  color: #ffffff;
+}
+  
 }
