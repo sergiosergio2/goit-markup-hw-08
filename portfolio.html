@@ -18,13 +18,20 @@
 </head>
 
 <body>
-    <!--HEADER-->
+    <!-- HEADER-->
     <header class="head">
         <div class="container">
             <div class="head-box">
-                <a class="logo list" href="./" lang="en">Web<span class="head__studio">Studio</span></a>
-                <!--NAVI-->
-                <nav class="navigation head__navigation">
+                <a class="logo list" href="./" lang="en">Web<span class="logo__studio">Studio</span></a>
+                <button type="button" class="burger-btn" data-menu-open>
+                    <svg class="burger-btn__icon" width="24" height="16">
+                        <use href="./images/sprite.svg#icon-menu_burger"></use>
+                    </svg>
+                </button>
+
+
+
+                <nav class="navigation">
                     <ul class="menu">
                         <li class="navigation__item link"><a class="navigation__menu-link  list"
                                 href="./index.html">Студия </a></li>
@@ -36,6 +43,7 @@
                         </li>
                     </ul>
                 </nav>
+
                 <ul class="contact">
 
                     <li class="contact__item link">
@@ -53,7 +61,52 @@
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
+
+
             </div>
+        </div>
+        <div class="menu-mob" data-menu>
+            <button type="button" class="close-mob-btn" data-menu-close>
+                <svg class="close-mob-btn__icon" width="18.67" height="18.67">
+                    <use href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+
+            <ul class="menu-mob__menu">
+                <li class="menu-mob__item link">
+                    <a href="./index.html" class="menu-mob__link  list">Студия</a>
+                </li>
+                <li class="menu-mob__item link">
+                    <a href="./portfolio.html" class="menu-mob__link menu-mob__link_activ list">Портфолио</a>
+                </li>
+                <li class="menu-mob__item link">
+                    <a href="#" class="menu-mob__link list">Контакты</a>
+                </li>
+
+            </ul>
+
+            <ul class="menu-mob__contacts">
+                <li class="menu-mob__item-contacts link">
+                    <a href="tel:+380961111111" class="menu-mob__tel list">+38 096 111 11 11</a>
+                </li>
+                <li class="menu-mob__item-contacts link">
+                    <a href="mailto:info@devstudio.com" class="menu-mob__mailto list">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="menu-mob__social">
+                <li class="menu-mob__social-item link">
+                    <a href="" class="menu-mob__social-link list">Instagram</a>
+                </li>
+                <li class="menu-mob__social-item link">
+                    <a href="" class="menu-mob__social-link list">Twitter</a>
+                </li>
+                <li class="menu-mob__social-item link">
+                    <a href="" class="menu-mob__social-link list">Facebook</a>
+                </li>
+                <li class="menu-mob__social-item link">
+                    <a href="" class="menu-mob__social-link list">LinkedIn</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -74,14 +127,31 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img1.jpg " width="370" height="294"
-                                    alt="фото нотбука">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img.webp, ./images/portfolio/desk/img@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img.jpg, ./images/potfolio/desk/img@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img.webp, ./images/portfolio/tabl/img@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img.jpg, ./images/portfolio/tabl/img@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img.webp, ./images/portfolio/mob/img@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img.jpg, ./images/portfolio/mob/img@2x.jpg">
+                                    <img src="#" alt="фото нотбука">
+                                </picture>
                                 <p class="overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании
                                     используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
-                            <div class=" client-info">
+                            <div class="client-info">
                                 <h4 class="client-title">Технокряк</h4>
                                 <p class="client-order">Веб-сайт</p>
                             </div>
@@ -91,8 +161,25 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img2.jpg" width="370" height="294"
-                                    alt="два баскетболиста в прыжке с мячём">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-1.webp, ./images/portfolio/desk/img-1@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-1.jpg, ./images/potfolio/desk/img-1@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-1.webp, ./images/portfolio/tabl/img-1@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-1.jpg, ./images/portfolio/tabl/img-1@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-1.webp, ./images/portfolio/mob/img@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-1.jpg, ./images/portfolio/mob/img-1@2x.jpg">
+                                    <img src="#" alt="два баскетболиста в прыжке с мячём">
+                                </picture>
                                 <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                                     iusto in tenetur. Mollitia harum aperiam quia a similique? Provident, unde
                                     architecto dignissimos nobis deleniti sunt excepturi harum quaerat tempore alias!
@@ -108,8 +195,25 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img3.jpg" width="370" height="294"
-                                    alt="лого ресторана">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-2.webp, ./images/portfolio/desk/img-2@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-2.jpg, ./images/potfolio/desk/img-2@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-2.webp, ./images/portfolio/tabl/img-2@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-2.jpg, ./images/portfolio/tabl/img-2@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-2.webp, ./images/portfolio/mob/img-2@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-2.jpg, ./images/portfolio/mob/img-2@2x.jpg">
+                                    <img src="#" alt="лого ресторана">
+                                </picture>
                                 <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                                     iusto in tenetur. Mollitia harum aperiam quia a similique? Provident, unde
                                     architecto dignissimos nobis deleniti sunt excepturi harum quaerat tempore alias!
@@ -125,8 +229,25 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img4.jpg" width="370" height="294"
-                                    alt="фото наушников">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-3.webp, ./images/portfolio/desk/img-3@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-3.jpg, ./images/potfolio/desk/img-3@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-3.webp, ./images/portfolio/tabl/img-3@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-3.jpg, ./images/portfolio/tabl/img-3@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-3.webp, ./images/portfolio/mob/img-3@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-3.jpg, ./images/portfolio/mob/img-3@2x.jpg">
+                                    <img src="#" alt="фото наушников">
+                                </picture>
                                 <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                                     iusto in tenetur. Mollitia harum aperiam quia a similique? Provident, unde
                                     architecto dignissimos nobis deleniti sunt excepturi harum quaerat tempore alias!
@@ -142,8 +263,25 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img5.jpg" width="370" height="294"
-                                    alt="духи в коробках">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-4.webp, ./images/portfolio/desk/img-4@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-4.jpg, ./images/potfolio/desk/img-4@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-4.webp, ./images/portfolio/tabl/img-4@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-4.jpg, ./images/portfolio/tabl/img-4@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-4.webp, ./images/portfolio/mob/img-4@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-4.jpg, ./images/portfolio/mob/img-4@2x.jpg">
+                                    <img src="#" alt="духи в коробках">
+                                </picture>
                                 <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                                     iusto in tenetur. Mollitia harum aperiam quia a similique? Provident, unde
                                     architecto dignissimos nobis deleniti sunt excepturi harum quaerat tempore alias!
@@ -159,8 +297,25 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img6.jpg" width="370" height="294"
-                                    alt="открытый сайт на мониторе">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-5.webp, ./images/portfolio/desk/img-5@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-5.jpg, ./images/potfolio/desk/img-5@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-5.webp, ./images/portfolio/tabl/img-5@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-5.jpg, ./images/portfolio/tabl/img-5@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-5.webp, ./images/portfolio/mob/img-5@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-5.jpg, ./images/portfolio/mob/img-5@2x.jpg">
+                                    <img src="#" alt="открытый сайт на мониторе">
+                                </picture>
                                 <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                                     iusto in tenetur. Mollitia harum aperiam quia a similique? Provident, unde
                                     architecto dignissimos nobis deleniti sunt excepturi harum quaerat tempore alias!
@@ -176,8 +331,25 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img7.jpg" width="370" height="294"
-                                    alt="открытая книга">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-6.webp, ./images/portfolio/desk/img-6@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-6.jpg, ./images/potfolio/desk/img-6@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-6.webp, ./images/portfolio/tabl/img-6@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-6.jpg, ./images/portfolio/tabl/img-6@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-6.webp, ./images/portfolio/mob/img-6@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-6.jpg, ./images/portfolio/mob/img-6@2x.jpg">
+                                    <img src="#" alt="открытая книга">
+                                </picture>
                                 <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                                     iusto in tenetur. Mollitia harum aperiam quia a similique? Provident, unde
                                     architecto dignissimos nobis deleniti sunt excepturi harum quaerat tempore alias!
@@ -193,7 +365,25 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img8.jpg" width="370" height="294" alt="логотип">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-7.webp, ./images/portfolio/desk/img-7@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-7.jpg, ./images/potfolio/desk/img-7@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-7.webp, ./images/portfolio/tabl/img-7@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-7.jpg, ./images/portfolio/tabl/img-7@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-7.webp, ./images/portfolio/mob/img-7@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-7.jpg, ./images/portfolio/mob/img-7@2x.jpg">
+                                    <img src="#" alt="логотип">
+                                </picture>
                                 <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                                     iusto in tenetur. Mollitia harum aperiam quia a similique? Provident, unde
                                     architecto dignissimos nobis deleniti sunt excepturi harum quaerat tempore alias!
@@ -209,8 +399,25 @@
                     <li class="client-cell">
                         <a href="#" class="client-link">
                             <div class="client-img-overlay">
-                                <img src="./images/portfolio-pictures/img9.jpg" width="370" height="294"
-                                    alt="работа на ноутбуке">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-8.webp, ./images/portfolio/desk/img-8@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desk/img-8.jpg, ./images/potfolio/desk/img-8@2x.jpg">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-8.webp, ./images/portfolio/tabl/img-8@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tabl/img-8.jpg, ./images/portfolio/tabl/img-8@2x.jpg">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-8.webp, ./images/portfolio/mob/img-8@2x.webp"
+                                        type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/portfolio/mob/img-8.jpg, ./images/portfolio/mob/img-8@2x.jpg">
+                                    <img src="#" alt="работа на ноутбуке">
+                                </picture>
                                 <p class="overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
                                     iusto in tenetur. Mollitia harum aperiam quia a similique? Provident, unde
                                     architecto dignissimos nobis deleniti sunt excepturi harum quaerat tempore alias!

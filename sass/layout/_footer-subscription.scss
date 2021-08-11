@@ -68,25 +68,33 @@ line-height: 1.25;
       background-color:#188CE8; 
     }
 }
-
 @media screen and (min-width: 1200px) {
-  .footer-subscription-form {
-    display: block;
-  margin-left: 100px;
-}
-.footer-subscription-block {
+    
+    .footer-subscrition-block {
   display: flex;
-  flex-direction: row;
-  align-items: center;
  
   justify-content: center;
   
-}
-.footer-subscription-btn {
-  margin: 0;
-}
+  
   
 }
+.footer-subscription-form {
+  margin-left: 93px;
+  align-items: flex-start;
+}
+.footer-subscription-input {
+  
+  width: 358px;
+}
+.footer-subscription-btn {
+  margin-left: 12px;
+}
+    }
+  
+
+
+  
+
 
 
 

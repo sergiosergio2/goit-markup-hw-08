@@ -1,6 +1,7 @@
 footer {
   
-  width: 100vw;
+ max-width: 1600px;
+ margin: 0 auto;
  
   padding: 60px 0;
   background-color: #2f303a;
@@ -39,7 +40,7 @@ footer {
 .logo-studio-footer {
   color: #ffffff;
 }
-.address{
+.address {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,6 +132,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .footer-block {
+    margin: 0 auto;
     width: 768px;
   display: flex;
   flex-direction: row;
@@ -143,16 +145,20 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+ 
   .footer-block {
     width: 1200px;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .address {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 .footer-text-link-block {
   display: block;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+  margin-bottom: 0;
   margin-left: 70px;
 }
  
