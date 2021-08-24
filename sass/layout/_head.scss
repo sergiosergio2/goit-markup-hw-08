@@ -10,8 +10,6 @@
   // margin: 0 auto;
   width: 100vw;
   
-
-
   border-bottom: 1px solid #ececec;
   
 }
@@ -26,9 +24,6 @@
 }
 
   
-
-
-
 .navigation {
   display: flex;
   margin-left: 93px;
@@ -87,12 +82,12 @@ letter-spacing: 0.03em;
   pointer-events: none;
 }
 .menu-mob.is-open {
-  opacity: 1;
+  opacity: 2;
   visibility: visible;
   pointer-events: auto;
 }
 .close-mob-btn {
-  position:absolute;
+  position: absolute;
   top: 5px;
   right: 15px;
   width: 40px;
@@ -165,10 +160,11 @@ color: #757575;
   position: relative;
   display: flex;
   justify-content: left;
+  
 }
 .menu-mob__social-item:not(:first-child) {
   border-left: 1px solid;
-  border-right-width: 22px;
+  
   padding-left: 10px;
   color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
@@ -188,7 +184,8 @@ color: #2196F3;
 
 @media  screen and (min-width:768px) {
  .head {
-  //  width: 768px;
+   width: 768px;
+   margin: 0 auto;
  }
   .burger-btn {
     display: none;
@@ -330,7 +327,7 @@ color: #2196F3;
 
 @media  screen and (min-width:1200px) {
   .head {
-// width: 1200px;
+width: 1200px;
   }
   .contact__item:not(:last-child) {
   margin-bottom: 0;
