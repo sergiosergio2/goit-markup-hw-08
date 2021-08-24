@@ -61,24 +61,24 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -103,7 +103,7 @@ img {
 }
 
 .head {
-  margin: 0 auto;
+  width: 100vw;
   border-bottom: 1px solid #ececec;
 }
 
@@ -259,16 +259,7 @@ img {
   color: #2196F3;
 }
 
-@media screen and (min-width: 480px) {
-  .head {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .head {
-    width: 768px;
-  }
   .burger-btn {
     display: none;
   }
@@ -378,9 +369,6 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .head {
-    width: 1200px;
-  }
   .contact__item:not(:last-child) {
     margin-bottom: 0;
   }
@@ -478,7 +466,7 @@ img {
   background-color: #188ce8;
 }
 
-.advantages-icon-field {
+.advantages__list-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,12 +475,12 @@ img {
   margin-bottom: 30px;
 }
 
-.advantages-icon-pic {
+.advantages__list-icon {
   width: 70px;
   height: 70px;
 }
 
-.advantages-icon-item {
+.advantages__list-field {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -504,7 +492,7 @@ img {
   background-color: #f5f4fa;
 }
 
-.advantages-list-title {
+.advantages__list-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -514,7 +502,7 @@ img {
   margin-bottom: 10px;
 }
 
-.advantages-text {
+.advantages__list-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -523,45 +511,57 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .advantages-icon {
+  .advantages__list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    max-width: 768px;
+    width: 768px;
   }
-  .advantages-icon-field {
+  .advantages__list-item {
     margin-left: 30px;
     margin-top: 30px;
-    max-width: 354px;
+    width: 354px;
     align-items: flex-start;
     margin-bottom: 0px;
   }
-  .advantages-icon-item {
+  .advantages__list-field {
     max-width: 354px;
   }
-  .advantages-text-1 {
+  .advantages__list-text--height {
     height: 75px;
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .advantages__list {
+    display: none;
+  }
+  .advantages__list-item {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .advantages-icon {
+  .advantages__list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    max-width: 1200px;
+    width: 1200px;
     margin-top: 0;
     margin-left: 0;
   }
-  .advantages-icon-field {
-    max-width: 270px;
-    margin: 0px;
+  .advantages__list-item:not(:first-child) {
+    margin-left: 30px;
   }
-  .advantages-icon-item {
+  .advantages__list-item {
+    width: 270px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .advantages__list-field {
     max-width: 270px;
   }
-  .advantages-text-1 {
+  .advantages__list-text--height {
     height: inherit;
   }
 }
@@ -623,11 +623,9 @@ img {
 }
 
 .team {
-  margin: 0 auto;
   width: 100vw;
   padding-bottom: 60px;
   padding-top: 60px;
-  max-width: 480px;
   background-color: #f5f4fa;
 }
 
@@ -716,9 +714,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .team {
-    max-width: 768px;
-  }
   .team-list {
     display: flex;
     flex-direction: row;
@@ -733,15 +728,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .team {
-    max-width: 1200px;
-  }
-}
-
 .regular-customers {
-  width: 480px;
-  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -753,6 +740,7 @@ img {
 .regular-customers-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -760,16 +748,13 @@ img {
 .regular-customers-item {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc((100%-60px) / 2);
   max-width: 210px;
 }
 
 .regular-customers-link {
   max-width: 210px;
   height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   cursor: pointer;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -801,15 +786,13 @@ img {
     width: 768px;
   }
   .regular-customers-item {
-    flex-basis: calc((100%-90px) / 3);
-    max-width: 226px;
+    width: 226px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .regular-customers {
     width: 1200px;
-    padding-top: 94px;
     padding-bottom: 94px;
   }
   .regular-customers-title {
@@ -820,19 +803,16 @@ img {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 0px;
-    margin-left: 0px;
   }
   .regular-customers-item {
     margin-top: 0px;
     margin-left: 0px;
     flex-basis: none;
-    max-width: 170px;
   }
 }
 
 footer {
-  max-width: 1600px;
-  margin: 0 auto;
+  width: 100vw;
   padding: 60px 0;
   background-color: #2f303a;
 }
@@ -951,16 +931,9 @@ footer {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-block {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer-block {
     margin: 0 auto;
-    width: 768px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -971,7 +944,6 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .footer-block {
-    width: 1200px;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: baseline;
@@ -1032,7 +1004,8 @@ footer {
 .footer-subscription-input {
   display: block;
   margin-bottom: 20px;
-  width: 450px;
+  width: 100vw;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1323,9 +1296,8 @@ footer {
   .work-menu {
     flex-wrap: nowrap;
     justify-content: center;
+    margin: 0 auto;
     margin-bottom: 30px;
-    margin-top: 0;
-    margin-left: 0;
   }
   .work-menu-btn {
     display: block;
@@ -1414,15 +1386,8 @@ footer {
   color: var(--text-color);
 }
 
-@media screen and (min-width: 480px) {
-  .client {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .client {
-    width: 768px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1437,12 +1402,6 @@ footer {
   .client-cell:hover {
     cursor: pointer;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client {
-    width: 1200px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -130,56 +130,59 @@
             <div class="container">
                 <h3 class="visually-hidden">наши особенности</h3>
 
-                <ul class="advantages-icon link">
-                    <li class="advantages-icon-field">
-                        <span class="advantages-icon-item">
-                            <svg class="advantages-icon-pic">
+                <ul class="advantages__list link">
+                    <li class="advantages__list-item">
+                        <span class="advantages__list-field">
+                            <svg class="advantages__list-icon">
                                 <use href="./images/sprite.svg#icon-antenna">
                                 </use>
                             </svg>
                         </span>
-                        <h4 class="advantages-list-title">внимание к деталям</h4>
-                        <p class="advantages-text">Идейные соображения, а также начало повседневной работы по
+                        <h4 class="advantages__list-title">внимание к деталям</h4>
+                        <p class="advantages__list-text">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.
                         </p>
                     </li>
-                    <li class="advantages-icon-field">
-                        <span class="advantages-icon-item">
-                            <svg class="advantages-icon-pic">
+                    <li class="advantages__list-item">
+                        <span class="advantages__list-field">
+                            <svg class="advantages__list-icon">
                                 <use href="./images/sprite.svg#icon-clock">
                                 </use>
                             </svg>
                         </span>
-                        <h4 class="advantages-list-title">Пунктуальность</h4>
-                        <p class="advantages-text advantages-text-1">Задача организации, в особенности же рамки и место
+                        <h4 class="advantages__list-title">Пунктуальность</h4>
+                        <p class="advantages__list-text advantages__list-text--height">Задача организации, в особенности
+                            же
+                            рамки и
+                            место
                             обучения
                             кадров
                             влечет за собой.
                         </p>
                     </li>
-                    <li class="advantages-icon-field">
-                        <span class="advantages-icon-item">
-                            <svg class="advantages-icon-pic">
+                    <li class="advantages__list-item">
+                        <span class="advantages__list-field">
+                            <svg class="advantages__list-icon">
                                 <use href="./images/sprite.svg#icon-diagram">
                                 </use>
                             </svg>
                         </span>
-                        <h4 class="advantages-list-title">Планирование</h4>
-                        <p class="advantages-text">Равным образом консультация с широким активом в значительной
+                        <h4 class="advantages__list-title">Планирование</h4>
+                        <p class="advantages__list-text">Равным образом консультация с широким активом в значительной
                             степени
                             обуславливает.
                         </p>
 
                     </li>
-                    <li class="advantages-icon-field">
-                        <span class="advantages-icon-item">
-                            <svg class="advantages-icon-pic">
+                    <li class="advantages__list-item">
+                        <span class="advantages__list-field">
+                            <svg class="advantages__list-icon">
                                 <use href="./images/sprite.svg#icon-astronaut">
                                 </use>
                             </svg>
                         </span>
-                        <h4 class="advantages-list-title">Современные технологии</h4>
-                        <p class="advantages-text">Значимость этих проблем настолько очевидна, что реализация
+                        <h4 class="advantages__list-title">Современные технологии</h4>
+                        <p class="advantages__list-text">Значимость этих проблем настолько очевидна, что реализация
                             плановых
                             заданий.
                         </p>
@@ -217,24 +220,24 @@
                     <li class="team-item">
                         <picture>
                             <source media="(min-width: 1200px)"
-                                srcset="./images/fotos/desktop/team1.webp, ./images/fotos/desktop/team1@2x.webp"
+                                srcset="./images/fotos/desktop/team1.webp 1x, ./images/fotos/desktop/team1@2x.webp 2x"
                                 type="image/webp">
 
                             <source media="(min-width: 1200px)"
-                                srcset="./images/fotos/desktop/team1.jpg, ./images/fotos/desktop/team1@2x.jpg">
-                            <source media="(min-width: 780px)"
-                                srcset="./images/fotos/tablet/team1.webp, ./images/fotos/tablet/team1@2x.webp"
+                                srcset="./images/fotos/desktop/team1.jpg 1x, ./images/fotos/desktop/team1@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/fotos/tablet/team1.webp 1x, ./images/fotos/tablet/team1@2x.webp 2x"
                                 type="image/webp">
-                            <source media="(min-width:780px)"
-                                srcset="./images/fotos/tablet/team1.jpg, ./images/fotos/tablet/team1@2x.jpg">
+                            <source media="(min-width:768px)"
+                                srcset="./images/fotos/tablet/team1.jpg 1x, ./images/fotos/tablet/team1@2x.jpg 2x">
                             <source media="(min-width: 280px)"
-                                srcset="./images/fotos/mobile/team1.webp, ./images/fotos/mobile/team1@2x.webp"
+                                srcset="./images/fotos/mobile/team1.webp 1x, ./images/fotos/mobile/team1@2x.webp 2x"
                                 type="image/webp">
 
                             <source media="(min-width: 280px)"
-                                srcset="./images/fotos/mobile/team1.jpg, ./images/fotos/mobile/team1@2x.jpg">
+                                srcset="./images/fotos/mobile/team1.jpg 1x, ./images/fotos/mobile/team1@2x.jpg 2x">
 
-                            <img class="team-image" src="./images/fotos/mobile/team1.jpg" alt="фото Демьяненко">
+                            <img class="team-image" src="#" alt="фото Демьяненко">
                         </picture>
                         <div class="team-names-block">
 
@@ -277,24 +280,24 @@
                     <li class="team-item">
                         <picture>
                             <source media="(min-width: 1200px)"
-                                srcset="./images/fotos/desktop/team2.webp, ./images/fotos/desktop/team2@2x.webp"
+                                srcset="./images/fotos/desktop/team2.webp 1x, ./images/fotos/desktop/team2@2x.webp 2x"
                                 type="image/webp">
 
                             <source media="(min-width: 1200px)"
-                                srcset="./images/fotos/desktop/team2.jpg, ./images/fotos/desktop/team2@2x.jpg">
-                            <source media="(min-width: 780px)"
-                                srcset="./images/fotos/tablet/team2.webp, ./images/fotos/tablet/team2@2x.webp"
+                                srcset="./images/fotos/desktop/team2.jpg 1x, ./images/fotos/desktop/team2@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/fotos/tablet/team2.webp 1x, ./images/fotos/tablet/team2@2x.webp 2x"
                                 type="image/webp">
-                            <source media="(min-width:780px)"
-                                srcset="./images/fotos/tablet/team2.jpg, ./images/fotos/tablet/team2@2x.jpg">
+                            <source media="(min-width:768px)"
+                                srcset="./images/fotos/tablet/team2.jpg 1x, ./images/fotos/tablet/team2@2x.jpg 2x">
                             <source media="(min-width: 280px)"
-                                srcset="./images/fotos/mobile/team2.webp, ./images/fotos/mobile/team2@2x.webp"
+                                srcset="./images/fotos/mobile/team2.webp 1x, ./images/fotos/mobile/team2@2x.webp 2x"
                                 type="image/webp">
 
                             <source media="(min-width: 280px)"
-                                srcset="./images/fotos/mobile/team2.jpg, ./images/fotos/mobile/team2@2x.jpg">
+                                srcset="./images/fotos/mobile/team2.jpg 1x, ./images/fotos/mobile/team2@2x.jpg 2x">
 
-                            <img class="team-image" src="./images/fotos/mobile/team2.jpg" alt="фото Репина">
+                            <img class="team-image" src="#" alt="фото Репина">
                         </picture>
                         <div class="team-names-block">
                             <h4 class="team-names">Ольга Репина</h4>
@@ -334,23 +337,23 @@
                     <li class="team-item">
                         <picture>
                             <source media="(min-width: 1200px)"
-                                srcset="./images/fotos/desktop/team3.webp, ./images/fotos/desktop/team3@2x.webp"
+                                srcset="./images/fotos/desktop/team3.webp 1x, ./images/fotos/desktop/team3@2x.webp 2x"
                                 type="image/webp">
 
                             <source media="(min-width: 1200px)"
-                                srcset="./images/fotos/desktop/team3.jpg, ./images/fotos/desktop/team3@2x.jpg">
-                            <source media="(min-width: 780px)"
-                                srcset="./images/fotos/tablet/team3.webp, ./images/fotos/tablet/team3@2x.webp"
+                                srcset="./images/fotos/desktop/team3.jpg 1x, ./images/fotos/desktop/team3@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/fotos/tablet/team3.webp 1x, ./images/fotos/tablet/team3@2x.webp 2x"
                                 type="image/webp">
-                            <source media="(min-width:780px)"
-                                srcset="./images/fotos/tablet/team3.jpg, ./images/fotos/tablet/team3@2x.jpg">
+                            <source media="(min-width:768px)"
+                                srcset="./images/fotos/tablet/team3.jpg 1x, ./images/fotos/tablet/team3@2x.jpg 2x">
                             <source media="(min-width: 280px)"
-                                srcset="./images/fotos/mobile/team3.webp, ./images/fotos/mobile/team3@2x.webp"
+                                srcset="./images/fotos/mobile/team3.webp 1x, ./images/fotos/mobile/team3@2x.webp 2x"
                                 type="image/webp">
 
                             <source media="(min-width: 280px)"
-                                srcset="./images/fotos/mobile/team3.jpg, ./images/fotos/mobile/team3@2x.jpg">
-                            <img class="team-image" src="./images/fotos/mobile/team3.jpg" alt="фото Тарасова">
+                                srcset="./images/fotos/mobile/team3.jpg 1x, ./images/fotos/mobile/team3@2x.jpg 2x">
+                            <img class="team-image" src="#" alt="фото Тарасова">
                         </picture>
 
                         <div class="team-names-block">
@@ -391,23 +394,23 @@
                     <li class="team-item">
                         <picture>
                             <source media="(min-width: 1200px)"
-                                srcset="./images/fotos/desktop/team4.webp, ./images/fotos/desktop/team4@2x.webp"
+                                srcset="./images/fotos/desktop/team4.webp 1x, ./images/fotos/desktop/team4@2x.webp 2x"
                                 type="image/webp">
 
                             <source media="(min-width: 1200px)"
-                                srcset="./images/fotos/desktop/team4.jpg, ./images/fotos/desktop/team4@2x.jpg">
-                            <source media="(min-width: 780px)"
-                                srcset="./images/fotos/tablet/team4.webp, ./images/fotos/tablet/team4@2x.webp"
+                                srcset="./images/fotos/desktop/team4.jpg 1x, ./images/fotos/desktop/team4@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./images/fotos/tablet/team4.webp 1x, ./images/fotos/tablet/team4@2x.webp 2x"
                                 type="image/webp">
-                            <source media="(min-width:780px)"
-                                srcset="./images/fotos/tablet/team4.jpg, ./images/fotos/tablet/team4@2x.jpg">
-                            <source media="(min-width: 320px)"
-                                srcset="./images/fotos/mobile/team4.webp, ./images/fotos/mobile/team4@2x.webp"
+                            <source media="(min-width:768px)"
+                                srcset="./images/fotos/tablet/team4.jpg 1x, ./images/fotos/tablet/team4@2x.jpg 2x">
+                            <source media="(min-width: 280px)"
+                                srcset="./images/fotos/mobile/team4.webp 1x, ./images/fotos/mobile/team4@2x.webp 2x"
                                 type="image/webp">
 
-                            <source media="(min-width: 320px)"
-                                srcset="./images/fotos/mobile/team4.jpg, ./images/fotos/mobile/team4@2x.jpg">
-                            <img class="team-image" src="./images/fotos/mobile/team4.jpg" alt="фото Ермаков">
+                            <source media="(min-width: 280px)"
+                                srcset="./images/fotos/mobile/team4.jpg 1x, ./images/fotos/mobile/team4@2x.jpg 2x">
+                            <img class="team-image" src="#" alt="фото Ермаков">
                         </picture>
                         <div class="team-names-block">
                             <h4 class="team-names">Михаил Ермаков</h4>

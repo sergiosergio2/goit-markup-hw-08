@@ -1,5 +1,6 @@
 
 .work-menu {
+ 
   display: flex;
   flex-wrap: wrap;
   margin-top: -15px;
@@ -41,9 +42,10 @@
   .work-menu {
     flex-wrap: nowrap;
     justify-content: center;
+    margin: 0 auto;
     margin-bottom: 30px;
-    margin-top: 0;
-    margin-left: 0;
+    // margin-top: 0;
+    // margin-left: 0;
   }
   .work-menu-btn {
   display: block;

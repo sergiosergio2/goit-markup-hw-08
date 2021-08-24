@@ -1,5 +1,6 @@
 .client-block {
   
+  
 }
 .client {
   display: flex;
@@ -75,16 +76,11 @@
   color: var(--text-color);
 }
 
-@media screen and (min-width: 480px) {
-  .client {
-    width: 480px;
-  }
+
   
-}
+
 @media screen and (min-width: 768px) {
   .client {
-    width: 768px;
-   
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -106,7 +102,7 @@
 }
 @media screen and (min-width: 1200px) {
   .client {
-    width: 1200px;
+   
   }
   
 }

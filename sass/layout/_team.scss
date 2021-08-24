@@ -5,11 +5,11 @@
 
 
 .team {
-   margin: 0 auto;
+  //  margin: 0 auto;
   width: 100vw;
  padding-bottom: 60px;
  padding-top: 60px;
-  max-width: 480px;
+  // max-width: 480px;
 
   background-color: #f5f4fa;
 }
@@ -105,7 +105,7 @@ margin-left: 10px;
 
 @media screen and (min-width: 768px) {
   .team {
-    max-width: 768px;
+    // max-width: 768px;
   }
   .team-list {
   display: flex;
@@ -124,7 +124,7 @@ margin-left: 10px;
 
 @media screen and (min-width: 1200px) {
   .team {
-    max-width: 1200px;
+    // max-width: 1200px;
   }
   
 }

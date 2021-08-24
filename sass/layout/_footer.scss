@@ -1,7 +1,7 @@
 footer {
-  
- max-width: 1600px;
- margin: 0 auto;
+  width: 100vw;
+//  max-width: 1600px;
+//  margin: 0 auto;
  
   padding: 60px 0;
   background-color: #2f303a;
@@ -126,14 +126,14 @@ footer {
 
 @media screen and (min-width: 480px) {
   .footer-block {
-    width: 480px;
+    // width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer-block {
     margin: 0 auto;
-    width: 768px;
+    // width: 768px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -147,7 +147,7 @@ footer {
 @media screen and (min-width: 1200px) {
  
   .footer-block {
-    width: 1200px;
+    // width: 1200px;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: baseline;
