@@ -10,11 +10,10 @@
   
 }
 .regular-customers-item {
-  width: calc((100%-30px * 2) / 2);
+  width: calc((100% - 30px * 2) / 2);
   margin-top: 30px;
   margin-left: 30px;
-  text-align: center;
-
+  
 }
 
   .regular-customers-link {
@@ -53,15 +52,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  
   .regular-customers-item {
-  
-     width: calc((100% - 30px * 3) / 3)
+   width: calc((100% - 30px * 3) / 3)
   }
-  
 }
 @media screen and (min-width: 1200px) {
-  
   .regular-customers-title {
     margin-bottom: 50px;
   }
@@ -70,18 +65,13 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-top: 0px;
-  margin-left: 0;
- 
-    
+  margin-left: 0px;
 }
-regular-customers-item {
+.regular-customers-item {
   margin-top: 0px;
   margin-left: 0px;
-  
-   width: 170px;
- 
-}
-  
+  width: 170px;
+ }
 }
 
 

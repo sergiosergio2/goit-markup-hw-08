@@ -40,13 +40,13 @@ img {
   list-style: none;
 }
 .section {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and(min-width:1200px) {
   .section {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   
 }
 }

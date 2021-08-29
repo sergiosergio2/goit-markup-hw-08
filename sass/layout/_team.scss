@@ -5,26 +5,23 @@
 
 
 .team {
-  //  margin: 0 auto;
-  width: 100vw;
- padding-bottom: 60px;
- padding-top: 60px;
-  // max-width: 480px;
 
   background-color: #f5f4fa;
 }
 .team-title {
   margin-bottom: 30px;
- 
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 79px;
+    
+  }
 }
 .team-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .team-item {
-  
   margin-bottom: 30px;
   
   padding-bottom: 24px;
@@ -33,47 +30,37 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .team-image {
-  margin-bottom: 30px;
-  max-width: 100%;
-
-}
-.team-names-block {
-  display: block;
-  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 100%;
   
- 
+  
 }
+
 .team-names {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
 .team-professions {
-  
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
- 
-  text-align: center;
+ text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 .team-icon-block {
   display: flex;
   justify-content: center;
-  
 }
 .social-item:not(:first-child) {
 margin-left: 10px;
 }
-
-
 .team-link {
   display: inline-flex;
   justify-content: center;
@@ -97,39 +84,49 @@ margin-left: 10px;
   height: 20px;
   fill: #afb1b8;
 
-       .team-link:focus &,
-       .team-link:hover & {
+     .team-link:focus &,
+     .team-link:hover & {
           fill: white;
-        }     
+  }     
 }
 
 @media screen and (min-width: 768px) {
-  .team {
-    width: 768px;
-    margin: 0 auto;
-
-  }
-  .team-list {
+ .team-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
 }
 .team-item {
   margin-left: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 0px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
-}
-}
-
-@media screen and (min-width: 1200px) {
-  .team {
-    width: 1200px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+
+     flex-wrap: nowrap;
+     margin: 0px 0px;
+  }
+  .team-item {
+    margin-top: 0;
+    margin-left: 0;
+    justify-content: space-between;
+  }
+  .team-item:not(:first-child) {
+    margin-left: 30px;
+
+  }
+
   
 }
+
+
 
 
 
