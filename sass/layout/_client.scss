@@ -1,16 +1,18 @@
-.client-block {
-  
-  
-}
+
 .client {
   display: flex;
   flex-direction: column;
 }
- .client-cell:not(:last-child) {
+
+ .client-item:not(:last-child) {
   margin-bottom: 30px;
   
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    
+  }
 
-    &:hover {
+  &:hover {
      cursor: pointer;
      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
@@ -19,6 +21,9 @@
   display: block;
   text-decoration: none;
  
+}
+.client__img {
+  width: 100%;
 }
 .client-img-overlay {
   position: relative;
@@ -87,10 +92,11 @@
   margin-left: -30px;
   margin-top: -30px;
 }
-.client-cell {
+.client-item {
   margin-left: 30px;
   margin-top: 30px;
-  margin-bottom: 0;
+  
+  
 
     &:hover {
      cursor: pointer;
