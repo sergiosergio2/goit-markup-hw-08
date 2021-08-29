@@ -7,7 +7,7 @@
   display: none;
 }
 .head {
-  // margin: 0 auto;
+ 
   width: 100vw;
   
   border-bottom: 1px solid #ececec;
@@ -67,8 +67,8 @@ letter-spacing: 0.03em;
   position: fixed;
   top:0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 10;
   padding: 48px 40px;
 
@@ -82,7 +82,7 @@ letter-spacing: 0.03em;
   pointer-events: none;
 }
 .menu-mob.is-open {
-  opacity: 2;
+  opacity: 10;
   visibility: visible;
   pointer-events: auto;
 }
@@ -157,9 +157,11 @@ letter-spacing: 0.02em;
 color: #757575;
 }
 .menu-mob__social {
-  position: relative;
+  // position: relative;
   display: flex;
+  
   justify-content: left;
+ 
   
 }
 .menu-mob__social-item:not(:first-child) {

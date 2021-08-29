@@ -7,7 +7,9 @@
 .modal {
   
   position: absolute;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
+ 
   
   
   background-color: #ffffff;
@@ -48,7 +50,7 @@
 }
 @media screen and (min-width:1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
   
 }
