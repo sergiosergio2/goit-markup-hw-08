@@ -16,6 +16,8 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+
+ 
 }
 .footer-text-link-block {
   margin-bottom: 60px;
@@ -126,6 +128,12 @@ footer {
 @media screen and (min-width: 768px) {
   footer {
     margin: 0 auto;
+  }
+  .footer-logo-address {
+    margin-bottom: 0px;
+  }
+  .footer-text-link-block {
+    margin-bottom: 0px;
   }
   .footer-block {
     margin: 0 auto;

@@ -111,6 +111,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0px;
 }
 
 .navigation {
@@ -149,6 +150,8 @@ img {
 }
 
 .menu-mob {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -189,7 +192,7 @@ img {
 }
 
 .menu-mob__menu {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .menu-mob__item:not(:last-child) {
@@ -270,6 +273,7 @@ img {
   }
   .head-box {
     align-items: center;
+    padding: 0px;
   }
   .logo {
     font-family: "Raleway", sans-serif;
@@ -472,13 +476,18 @@ img {
 }
 
 .advantages__list-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   max-width: 450px;
+}
+
+.advantages__list-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .advantages__list-field {
@@ -522,7 +531,6 @@ img {
     margin-top: 30px;
     width: 354px;
     align-items: flex-start;
-    margin-bottom: 0px;
   }
   .advantages__list-text--height {
     height: 75px;
@@ -626,15 +634,27 @@ img {
 }
 
 .team-item {
-  margin-bottom: 30px;
-  padding-bottom: 24px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+.team-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
 .team-image {
-  padding-bottom: 30px;
   width: 100%;
+}
+
+.team-names-block {
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .team-names {
@@ -923,6 +943,12 @@ footer {
   footer {
     margin: 0 auto;
   }
+  .footer-logo-address {
+    margin-bottom: 0px;
+  }
+  .footer-text-link-block {
+    margin-bottom: 0px;
+  }
   .footer-block {
     margin: 0 auto;
     width: 768px;
@@ -997,7 +1023,7 @@ footer {
 .footer-subscription-input {
   display: block;
   margin-bottom: 20px;
-  width: 100vw;
+  width: 100%;
   max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1297,6 +1323,7 @@ footer {
   .work-menu-btn {
     display: block;
     margin-top: 0;
+    margin-left: 0px;
   }
   .work-menu-btn:not(:first-child) {
     margin-left: 8px;

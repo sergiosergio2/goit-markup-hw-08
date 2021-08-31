@@ -15,10 +15,11 @@
 }
 .head-box {
   display: flex;
-  
- 
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0px;
+
+  
   
 
 }
@@ -64,6 +65,8 @@ letter-spacing: 0.03em;
   }
 }
 .menu-mob {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top:0;
   left: 0;
@@ -108,7 +111,7 @@ letter-spacing: 0.03em;
 
 }
 .menu-mob__menu {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 
@@ -137,6 +140,7 @@ color: #212121;
 }
 .menu-mob__contacts {
   margin-bottom: 64px;
+  
 }
 .menu-mob__item-contacts {
   margin-bottom: 32px;
@@ -197,6 +201,7 @@ color: #2196F3;
   }
   .head-box {
     align-items: center;
+    padding: 0px;
   }
   .logo {
   font-family: "Raleway", sans-serif;
