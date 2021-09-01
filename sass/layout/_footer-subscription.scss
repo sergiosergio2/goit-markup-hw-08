@@ -15,8 +15,9 @@ margin-bottom: 20px;
 .footer-subscription-form {
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
+  
  
 }
 .footer-subscription-block {
@@ -26,11 +27,12 @@ margin-bottom: 20px;
  
   justify-content: center;
   
+  
 }
 .footer-subscription-input {
   display: block;
  margin-bottom: 20px;
- width: 100%;
+ width: 100vw;
   max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -68,6 +70,11 @@ line-height: 1.25;
     &:hover {
       background-color:#188CE8; 
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscription-form {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
     
